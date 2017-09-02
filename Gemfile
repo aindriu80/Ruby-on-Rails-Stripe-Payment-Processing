@@ -8,20 +8,19 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
 # sqlite3 for development and test database
 gem 'sqlite3', group: [:development, :test]
-
 # postgres for production database
 gem 'pg', group: :production
 #12 factor for heroku
 gem 'rails_12factor', group: :production
-
+# stripe for taking payments
+gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
 # add twitter bootstrap
- gem 'bootstrap-sass'
+gem 'bootstrap-sass'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
