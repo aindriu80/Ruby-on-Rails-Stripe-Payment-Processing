@@ -275,6 +275,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  bcrypt
   bootstrap-sass
   byebug
   capybara (~> 2.13)

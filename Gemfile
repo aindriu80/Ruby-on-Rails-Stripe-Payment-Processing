@@ -21,7 +21,8 @@ gem 'rails_12factor', group: :production
 gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
 # Figaro to securely configure App
 gem 'figaro'
-# activeadmind for admin system
+
+# activeadmin for admin system
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
@@ -52,7 +53,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'bcrypt', platforms: :ruby
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
