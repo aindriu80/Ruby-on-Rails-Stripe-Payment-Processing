@@ -21,10 +21,18 @@ gem 'rails_12factor', group: :production
 gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
 # Figaro to securely configure App
 gem 'figaro'
+# activeadmind for admin system
+gem 'activeadmin', github: 'activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+# devise for user authentication
+gem 'devise'
+
 # add twitter bootstrap
 gem 'bootstrap-sass'
 
 gem 'letter_opener', group: :development
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
